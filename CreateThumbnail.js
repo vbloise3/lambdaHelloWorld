@@ -93,7 +93,7 @@ exports.handler = function(event, context, callback) {
                 );
             } else {
                 console.log(
-                    'Successfully resized ' + srcBucket + '/' + srcKey +
+                    'Successfully resized it ' + srcBucket + '/' + srcKey +
                     ' and uploaded to ' + dstBucket + '/' + dstKey
                 );
             }
