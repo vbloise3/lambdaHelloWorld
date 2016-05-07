@@ -34,7 +34,7 @@ exports.handler = function(event, context, callback) {
     // Infer the image type.
     var typeMatch = srcKey.match(/\.([^.]*)$/);
     if (!typeMatch) {
-        callback("Could not determine the image type.");
+        callback("Could not determine the image type(s).");
         return;
     }
     var imageType = typeMatch[1];
