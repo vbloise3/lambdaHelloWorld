@@ -11,7 +11,7 @@ exports.handler = function(event, context) {
     if ('name' in event) {
         name = event['name'];
     } else {
-        name = 'World!';
+        name = 'Worlds!';
     }
     if ('greeting' in event) {
         greeting = event['greeting'];
