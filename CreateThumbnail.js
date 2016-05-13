@@ -5,7 +5,7 @@
 var async = require('async');
 var AWS = require('aws-sdk');
 var gm = require('gm')
-    .subClass({ imageMagick: true }); // Enable ImageMagick image translation integration.
+    .subClass({ imageMagick: true }); // Enable ImageMagick image translations integration.
 var util = require('util');
 
 // constants
