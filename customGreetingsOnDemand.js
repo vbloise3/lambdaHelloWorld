@@ -1,5 +1,5 @@
 /**
- * Created by vincebloise on 5/4/16.
+ * Created by vincebloise on 5/12/16.
  */
 console.log('loading function');
 exports.handler = function(event, context) {
