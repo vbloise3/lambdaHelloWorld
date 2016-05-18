@@ -11,3 +11,11 @@ aws elasticbeanstalk terminate-environment --environment-name etherpad
 aws elasticbeanstalk describe-environments --environment-names etherpad
 ##once status changes to Terminated
 aws elasticbeanstalk delete-application --application-name etherpad
+
+##irc firewall
+aws ec2 describe-vpcs --query Vpcs[0].VpcId --output text
+aws cloudformation create-stack --stack-name irc --template-url https://s3.amazonaws.com/awsinaction/chapter5/irc-cloudformation.json --parameters ParameterKey=VPC,ParameterValue=$VpcId
+aws cloudformation describe-stacks --stack-name irc --query Stacks[0].StackStatus
+
+##delete the stack
+aws cloudformation delete-stack --stack-name irc
