@@ -19,3 +19,8 @@ aws cloudformation describe-stacks --stack-name irc --query Stacks[0].StackStatu
 
 ##delete the stack
 aws cloudformation delete-stack --stack-name irc
+
+##get user info
+aws iam get-user --query "User.Arn" --output text
+
+##create admin group
