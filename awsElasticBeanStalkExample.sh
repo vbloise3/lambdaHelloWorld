@@ -29,4 +29,4 @@ aws iam attach-group-policy --group-name "admin" --policy-arn "arn:aws:iam::aws:
 ##create an admin user
 aws iam create-user --user-name "myuser"
 aws iam add-user-to-group --group-name "admin" --user-name "myuser"
-aws iam create-login-profile --user-name "myuser" --password "myuser4110"
+aws iam create-login-profile --user-name "myuser" --password "skateco"
