@@ -30,3 +30,5 @@ aws iam attach-group-policy --group-name "admin" --policy-arn "arn:aws:iam::aws:
 aws iam create-user --user-name "myuser"
 aws iam add-user-to-group --group-name "admin" --user-name "myuser"
 aws iam create-login-profile --user-name "myuser" --password "skateco"
+##create an s3 bucket
+aws s3 mb s3://awsinaction-vincebloise
