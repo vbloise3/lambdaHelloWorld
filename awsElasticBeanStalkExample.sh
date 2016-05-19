@@ -32,3 +32,7 @@ aws iam add-user-to-group --group-name "admin" --user-name "myuser"
 aws iam create-login-profile --user-name "myuser" --password "skateco"
 ##create an s3 bucket
 aws s3 mb s3://awsinaction-vincebloise
+##backup a dir to the s3 bucket
+aws s3 sync /Users/vincebloise/mys3 s3://awsinaction-vincebloise/backup
+##restore from the s3
+aws s3 cp --recursive s3://awsinaction-vincebloise/backup /Users/vincebloise/Downloads/restore
