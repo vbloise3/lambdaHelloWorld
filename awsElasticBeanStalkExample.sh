@@ -36,3 +36,8 @@ aws s3 mb s3://awsinaction-vincebloise
 aws s3 sync /Users/vincebloise/mys3 s3://awsinaction-vincebloise/backup
 ##restore from the s3
 aws s3 cp --recursive s3://awsinaction-vincebloise/backup /Users/vincebloise/Downloads/restore
+##remove the s3 bucket
+aws s3 rb --force s3://awsinaction-vincebloise
+
+##setup an empty bucket for a simple s3 gallery
+aws s3 mb s3://awsinaction-sdk-vincebloise
